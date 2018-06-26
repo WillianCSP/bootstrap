@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Materialize</title>
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container">
+		<h2>Modal</h2>
+		<!-- Modal Trigger -->
+		<a class="waves-effect waves-light btn" href="#modal1">Modal</a>
+
+		<!-- Modal Structure -->
+		<div id="modal1" class="modal">
+			<div class="modal-content">
+				<h4>Titulo</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit alias perferendis error accusantium velit rem unde maiores, explicabo ratione numquam sint quos ut expedita delectus enim odio dignissimos repudiandae? Hic.</p>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Botão</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<h2>Modal Footer Fixo</h2>
+		<!-- Modal Trigger -->
+		<a class="waves-effect waves-light btn" href="#modal2">Modal</a>
+
+		<!-- Modal Structure -->
+		<div id="modal2" class="modal modal-fixed-footer">
+			<div class="modal-content">
+				<h4>Modal Header</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur recusandae corporis accusamus incidunt unde ipsa itaque inventore blanditiis perspiciatis, voluptatem explicabo veritatis sapiente cupiditate quas iure doloribus esse dolorem eius! Repellat eos hic similique molestiae ut natus tenetur labore qui asperiores tempore. Animi reiciendis temporibus, dolorem iste amet, quia quam repudiandae, quis,mus harum eos fugiat, laudantium earum accusantium placeat dolore aliquam deleniti cupiditate quod qui dolorum aut, ratione doloribus, molestias! Quibusdam aliquid, neque voluptatibus quidem ad id, iure ratione, maxime possimus perspiciatis unde voluptate aperiam dolores itaque iusto eos deserunt molestiae! Tempora, autem porro eligendi quam sequi error omnis at?</p>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+	    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+	    $('.modal').modal();
+	});
+
+</script>
+</body>
+</html>

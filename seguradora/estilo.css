@@ -1,0 +1,48 @@
+.corCinza{
+	background: #EEE;
+	padding: 10px;
+}
+#menu{
+	border-radius: 0px;
+}
+.banner{
+	margin-top: -20px;
+}
+.sessaoPreta{
+	background: #000; color: #fff;
+	margin-top: 1em;	
+}
+.marginTopo{
+	margin-top: 1em;
+}
+.sessaoDepoimento{
+	background: url("img/bgDepoimento.jpg") no-repeat;
+	background-size: cover; color: #fff;
+	text-shadow: 2px 2px #000;
+}
+	.sessaoDepoimento img{
+		margin: 1em auto;
+	}
+
+footer{
+	background:#333; color: #fff;
+	margin-top: 1em;
+}
+	footer a{
+		color: #fff; 
+	}
+	footer a:hover{
+		color: #999; 
+	}
+
+
+@media (min-width: 1600px){
+	.banner img{
+		width: 100%; height: auto;
+	}
+}
+@media (max-width: 992px){
+	.textoCentralizado{
+		text-align: center;
+	}
+}

@@ -1,0 +1,103 @@
+*{
+	font-family: 'Rambla', sans-serif;
+}
+header{
+	background: url("img/bgTopo.jpg");
+	background-size: cover;
+}
+.menu{
+	background: #ff0000;
+	color: #fff; border-radius: 0;
+}
+.menu a{
+	color: #fff;
+}
+	.menu li a:hover{
+		background: #af0505;
+	}
+.navbar-toggle .icon-bar{
+	background: #fff;
+}
+.nav .open>a:hover{
+	background: #ff0000;
+	color: #fff;
+}
+ .nav .open>a:focus{
+ 	background: #ff0000;
+	color: #fff;
+ }
+.banner{
+	margin-top: -20px;
+}
+.titulos{
+	font-family: 'Bangers', cursive;
+}
+.sessaoVermelha{
+	background: #ff0000 url("img/pontaBaixoVermelhoBranco.jpg") bottom repeat-x;
+	color: #fff;
+	padding-bottom: 50px;
+	margin: 1em auto;
+}
+footer{
+	background: #000; color: #999;
+	margin-top: 1em;
+}
+.redeSociais{
+	background: #333; color: #999;
+	padding: 5px; font-size: 20px;
+}
+	.redeSociais a{
+		color: #999; margin: 0 5px;
+	}
+	.redeSociais a:hover{
+		color: #ddd;
+		transition: all 1s ease;
+	}
+
+
+
+/* breakpoint >1600 - banner*/
+@media (min-width: 1600px){
+	.banner img{
+		width: 100%; height: auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************
+************************
+fotos
+************************
+************************/
+.marginFotos img{
+	margin-bottom: 0.5em;
+}
+
+
+/***********************
+************************
+Blog
+************************
+************************/
+.iconeBlog{
+	font-size: 50px;
+	text-align: center;
+}
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap</title>
+	<!-- meta site responsivos-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<header class="page-header">
+			<h1>Listas</h1>
+		</header>	
+		<!-- retira o comportamento padrão de listas -->
+		<ul class="list-unstyled">
+			<li>Item</li>
+			<li>Item</li>
+			<li>Item
+				<ul>
+					<li>Sub</li>
+					<li>Sub</li>
+				</ul>
+			</li>
+			<li>Item</li>
+			<li>Item</li>
+		</ul>
+		<hr>
+		
+
+		<h4>Lado a Lado (inline-block)</h4>
+		<ul class="list-inline">
+			<li><a href="">Menu</a></li>
+			<li><a href="">Menu</a></li>
+			<li><a href="">Menu</a></li>
+			<li><a href="">Menu</a></li>
+			<li><a href="">Menu</a></li>
+		</ul>
+		<hr>
+		
+
+		<h4>Descrição</h4>
+		<dl>
+			<dt>Palavra(QUE IRÁ SER DESCRITA)</dt>
+			<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ullam, facere vitae deserunt dicta quod at non cupiditate velit doloremque.</dd>
+			<dt>Chrome</dt>
+			<dd>Navegador mais utilizado, e atualizado no ano de 2016</dd>
+		</dl>
+		<hr>
+
+		
+		<!-- comportamento de dt a esquerda e dd a direita -->
+		<dl class="dl-horizontal">
+			<dt>Palavra(QUE IRÁ SER DESCRITA)</dt>
+			<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ullam, facere vitae deserunt dicta quod at non cupiditate velit doloremque.</dd>
+			<dt>Chrome</dt>
+			<dd>Navegador mais utilizado, e atualizado no ano de 2016</dd>
+		</dl>
+		
+	</div>
+	
+	<!-- scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+</body>
+</html>

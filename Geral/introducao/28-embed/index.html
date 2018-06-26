@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+ 
+
+   <div class="container">        
+    <div class="row">
+
+        <header class="page-header">
+          <h1>Embed</h1>
+        </header>
+
+        <h2>Vídeo HTML5</h2>
+
+        <p>Então o “Aspect Ratio” é a proporção entre a largura e a altura de uma imagem</p>
+
+        <p> No vídeo, mais respectivamente a TV, as proporções são: no formato SD (Standard Definition que já está em extinção) de 4: 3 (1,3 3: 1) e o formato de vídeo universal criado no século 20,  para televisão de alta definição (HDTV) 16: 9 (1,7 7: 1)</p>
+
+        <div class="col-md-8 col-md-offset-2">
+            <h4 class="text-center">Vídeo razão de aspecto 4:3 - Incorporado com o elemento <code>video</code> da HTML5</h4>
+            <div class="embed-responsive embed-responsive-4by3">    
+                <video poster="assets/images/cover.jpg" class="embed-responsive-item" controls>
+                    <source src="assets/videos/plymouth.ogg" type="video/ogg" />
+                    <source src="assets/videos/plymouth.mp4" type="video/mp4" />
+                    <source src="assets/videos/plymouth.webm" type="video/webm" />
+                    <p>Lamento! Seu navegador não suporta o elemento video da HTML5.<br /> 
+                  Assista o video localmente <br /> <a href="plymouth.mp4">fazendo o download</a></p>
+                </video>
+            </div>
+        </div>
+
+    </div> <!-- /.row -->
+
+    <div class="row">
+
+      <h2>Vídeo Youtube</h2>
+
+      <div class="col-md-8 col-md-offset-2">
+          <h4 class="text-center">Vídeo razão de aspecto 16:9 - Incorporado do Youtube</h4>
+          <p>Bootstrap permite que se retire do código os atributos width, height e frameborder.</p>
+          <div class="embed-responsive embed-responsive-16by9">    
+              <iframe src="https://www.youtube.com/embed/90R6NNXEIsE" allowfullscreen class="embed-responsive-item"></iframe>    
+          </div>
+      </div>
+
+    </div> <!-- /.row -->
+
+  </div> <!-- /.container -->
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./assets/js/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

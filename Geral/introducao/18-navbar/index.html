@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap</title>
+
+	<!-- meta site responsivos-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- css -->
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+	<style>
+		.navbar-color {
+			background-color: #ffcc33;
+			color:  #000;
+		}
+		.navbar-color a {
+			color:  #000;
+		}
+		.navbar-color .navbar-toggle .icon-bar {
+			background-color: #000;
+		}
+	</style>
+
+</head>
+<body>
+
+	<nav class="navbar navbar-color"> <!-- navbar-default ou navbar-inverse -->
+		<!-- container-fluid -->
+		<div class="container-fluid">
+			
+			<!-- configuracoes dispositivos até 768px -->
+			<div class="navbar-header">
+				<!-- data-target -> recebe id do menu que será aberto, quando for clicado -->
+				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menuPrincipal">
+					<!-- faz os risquinhos de dentro do botao -->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- Logo pertencente a navabar, geralmente utilizado para dispositivos móveis
+				Para aparecer somente no mobile visible-xs-block -->
+				<a href="#" class="navbar-brand">Logo</a>
+
+			</div>
+			<!-- /navbar-header -->
+
+			<div class="collapse navbar-collapse" id="menuPrincipal">
+					
+				<ul class="nav navbar-nav">
+
+					<li><a href="#">Link</a></li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Link <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="">Submenu</a></li>
+							<li><a href="">Submenu</a></li>
+						</ul>
+					</li>
+
+					<li><a href="#">Link</a></li>
+
+				</ul>
+				<!-- /nav navbar-nav -->
+
+				<!-- form search -->
+				<form action="" class="navbar-form navbar-left">
+					<div class="form-group">
+
+						<div class="input-group">
+
+							<input type="search" name="search" placeholder="Buscar..." class="form-control">
+
+							<span class="input-group-btn">
+								<button type="submit" class="btn btn-default">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</span>
+							<!-- /input-group-btn -->
+
+						</div>	
+						<!-- /input-group -->
+						
+					</div>
+					<!-- /form-group -->
+					
+				</form>
+				<!-- form -->
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Link</a></li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Link <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="">Submenu</a></li>
+							<li><a href="">Submenu</a></li>
+						</ul>
+					</li>
+
+					<li><a href="#">Link</a></li>
+				</ul>
+
+
+			</div>
+
+		</div>
+		<!-- /container-fluid -->
+	</nav>
+	
+	<!-- scripts -->
+	<script src="./assets/js/jquery.min.js"></script>
+	<script src="./assets/js/bootstrap.min.js"></script>
+	
+</body>
+</html>

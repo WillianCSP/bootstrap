@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap</title>
+
+	<!-- meta site responsivos-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- css -->
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+</head>
+<body>
+
+	<div class="container">
+		<header class="page-header">
+			<h1>Paginação</h1>
+		</header>
+
+		<h3>Paginação Default</h3>
+		<nav>
+			<!-- 
+				tamanhos, pagination-lg, pagination-sm, md é o padrão
+			-->
+			<ul class="pagination">
+				<!-- seta prev -->
+				<li class="disabled"> <!-- disable desativa a navegação -->
+					<a href="#">
+						<span>&laquo;</span>
+					</a>
+				</li>
+				<!-- numeros da paginação -->
+				<li ><a href="">1</a></li>
+				<li class="active"><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+				<!-- seta next -->
+				<li>
+					<a href="#">
+						<span>&raquo;</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<h3>Paginador</h3>
+		<nav>
+			<ul class="pager">
+				<li><a href="">Anterior</a></li>
+				<li><a href="">Próximo</a></li>
+			</ul>
+		</nav>
+
+		<nav>
+			<ul class="pager">
+
+				<li class="previous disabled">
+					<a href=""><span>&larr;</span> Anterior</a>
+				</li>
+
+				<li class="next">
+					<a href="">Próximo <span>&rarr;</span></a>
+				</li>
+			</ul>
+		</nav>
+
+
+	</div>
+
+
+	
+	<!-- scripts -->
+	<script src="./assets/js/jquery.min.js"></script>
+	<script src="./assets/js/bootstrap.min.js"></script>
+	
+</body>
+</html>

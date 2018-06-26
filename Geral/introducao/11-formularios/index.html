@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap</title>
+
+	<!-- meta site responsivos-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+
+	<div class="container">
+		<header class="page-header">
+			<h1>Formulário</h1>
+		</header>
+
+	
+		<h3 class="bg-primary">Form Group</h3>
+		<form>
+			<div class="form-group">
+				<label for="nome">Nome:</label>
+				<input type="text" class="form-control" name="nome" id="nome" placeholder="Nome Completo">
+			</div>
+
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" class="form-control" placeholder="email@email.com.br">
+			</div>
+
+			<div class="form-group">
+				<label for="mensagem">Mensagem:</label>
+				<textarea name="mensagem" id="mensagem" class="form-control" rows="10" placeholder="Escreva aqui sua mensagem..."></textarea>
+			</div>		
+			<button class="btn btn-success">Enviar Dados</button>
+		</form>
+		<hr>
+
+
+
+
+
+
+
+
+
+
+		<h3  class="bg-primary">Form Inline</h3>
+		<!-- display inline-block no inputs, para que o form assuma o comportamento de uma linha -->
+		<form class="form-inline">
+
+			<div class="form-group">
+				<label for="nome">Nome:</label>
+				<input type="text" class="form-control" name="nome" id="nome" placeholder="Nome Completo">
+			</div>
+
+			<div class="form-group">
+				<label for="senha">Senha:</label>
+				<input type="password" class="form-control" name="senha" id="senha">
+			</div>
+
+			<button class="btn btn-primary">Acessar</button>
+		</form>
+		<hr>
+
+
+
+
+
+
+
+
+
+
+
+		<h3 class="bg-primary">Form Horizontal</h3>
+		<form class="form-horizontal">
+			<div class="form-group">
+				<label for="nome" class="col-sm-2 control-label">Nome:</label>
+				<div class="col-sm-10">
+					<input type="text" name="nome" id="nome" class="form-control">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="telefone" class="col-sm-2 control-label">Telefone:</label>
+				<div class="col-sm-10">
+					<input type="tel" name="telefone" id="telefone" class="form-control">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<!-- <div class="col-sm-2"></div> substituida por offset --> 
+				<div class="col-sm-offset-2 col-sm-10">
+					<button class="btn btn-warning">Alterar Dados</button>
+				</div>
+			</div>	
+		</form>
+		<hr>
+
+
+
+
+
+
+
+
+
+		<h3 class="bg-primary">Estados de validação</h3>
+		<form>
+			<!-- 			
+				para adicionar estado de validação
+				1 - has-nomedoestado(success,warning,error) na form-group
+				2 - span, id(qualquer um) class(help-block)
+				3- Vincular id do span dentro do atributo aria-discrebedby do input 
+			-->
+			<!-- 
+				para adicionar ícones dentro de inputs:
+				1 - has-feedback(na form-group)
+				2 - form-control-feedback(dentro do span dos glyphicons) 
+			-->
+			<div class="form-group has-warning has-feedback">
+				<label for="entrada" class="control-label">Entrada enviada com erro</label>
+				<input type="text" class="form-control" name="entrada" id="entrada" aria-discrebedby="help-sucesso">
+				<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+				<!-- texto de instrução, id(aleatório) class(help-block) -->
+				<span id="help-sucesso" class="help-block">Ahh, você escreveu errado!</span>
+			</div>
+
+		</form>
+		<hr>
+
+
+
+
+
+
+
+
+		
+
+		<h3  class="bg-primary">Controles</h3>
+		<form>
+			<div class="row">
+				<!-- 
+					tamanhos:
+					input-lg
+					input-sm
+					md ja é padrão 
+				-->
+				
+				<div class="col-md-6">
+					<div class="form-group">
+						<!-- estado desativado attr(disabled) -->
+						<input type="text" class="form-control input-lg" placeholder="Estou desativado" disabled>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<!-- estado para leitura attr(readonly) -->
+						<input type="email" class="form-control input-sm" placeholder="Só para consulta" readonly>
+					</div>
+				</div>
+
+			</div>
+		</form>
+
+
+		<h3  class="bg-primary">Grupo de Inputs</h3>
+
+		<form>
+			<!-- 
+				Tamanhos de input groups 
+				Adicionar paralelo a class input-group:
+				* input-group-lg (para maiores)
+				* input-group-sm (para menores)
+				* padrão md
+			-->
+			<div class="form-group">
+
+				<label for="facebook">Coloque seu id do facebook</label>
+
+				<div class="input-group">
+					<span class="input-group-addon">http://facebook.com/</span>
+					<input type="text" class="form-control" name="facebook">
+				</div>
+
+			</div>
+			<!-- /form-group -->
+
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon">R$</span>
+					<input type="text" class="form-control" placeholder="Valor" name="valor">
+					<span class="input-group-addon">,00</span>
+				</div>
+			</div>
+
+			<!-- exemplo de input group com campos combinados(radio, checkbox) -->
+			<div class="form-group">
+				<div class="input-group input-group-lg">
+
+					<span class="input-group-addon">
+						<input type="radio"> Masculino
+					</span>
+
+					<input type="text" class="form-control">
+
+				</div>
+			</div>
+
+			<!-- BUTTONS ADDONS -->
+			<!-- OBS: Para input group com botoes utilizamos a class input-group-btn -->
+			<div class="input-group">
+				<input type="text" class="form-control">				
+				<span class="input-group-btn">
+					<button class="btn btn-primary">Ok</button>
+				</span>
+			</div>
+		</form>
+		<hr>
+	</div>
+	<!-- scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap</title>
+
+	<!-- meta site responsivos-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- css -->
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+	<style>
+		.group { height: 100px; }
+		.group-1 { background-color: lightcyan; }
+		.group-2 { background-color: lightyellow; z-index: 10; }
+		.group-3 { background-color: lightsalmon; }
+		.group-4 { background-color: cyan;}
+		.group-5 { background-color: yellow;}
+		.group-6 { background-color: salmon;}
+		.group-7 { background-color: darkcyan;}
+		.group-8 { background-color: goldenrod;}
+		.group-9 { background-color: deeppink;}
+		.group-10 { background-color: #555;}
+		.group-11 { background-color: #666;}
+		.group-12 { background-color: #777;}
+	</style>
+
+</head>
+<body>
+
+	<div class="container">
+		<header class="page-header">
+			<h1>PULL E PUSH</h1>
+		</header>
+	</div>
+	
+
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="col-md-4 group group-1"></div>
+			<!-- Adiciona atributo left na minha coluna do grid, empurrando o elemento para a direita -->
+			<div class="col-md-4 col-md-push-1 group group-2">PUSH</div>
+			<div class="col-md-4 group group-3"></div>
+		</div>
+		<!-- /row -->
+
+		<div class="row">
+			<div class="col-md-4 group group-4"></div>
+			<!-- Adiciona atributo right na minha coluna do grid, empurrando o elemento para a esquerda -->
+			<div class="col-md-4 col-md-pull-4 group group-5">PULL</div>
+			<div class="col-md-4 group group-6"></div>
+		</div>
+		<!-- /row -->
+
+	</div>
+
+	<!-- scripts -->
+	<script src="./assets/js/jquery.min.js"></script>
+	<script src="./assets/js/bootstrap.min.js"></script>
+	
+</body>
+</html>

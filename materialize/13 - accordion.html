@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Materialize</title>
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container">
+		<h1>Accordion</h1>
+		<ul class="collapsible" data-collapsible="accordion">
+			<li>
+			<div class="collapsible-header active"><i class="material-icons">filter_drama</i>Primeiro</div>
+				<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+			</li>
+			<li>
+				<div class="collapsible-header"><i class="material-icons">place</i>Segundo</div>
+				<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+			</li>
+			<li>
+				<div class="collapsible-header"><i class="material-icons">whatshot</i>Terceiro</div>
+				<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+			</li>
+		</ul>
+	</div>
+
+
+
+
+	<div class="container">
+		<h1>Collapse Popout</h1>
+		<ul class="collapsible popout" data-collapsible="accordion">
+			<li>
+			<div class="collapsible-header active red"><i class="material-icons">filter_drama</i>First</div>
+				<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+			</li>
+			<li>
+				<div class="collapsible-header red"><i class="material-icons">place</i>Second</div>
+				<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+			</li>
+			<li>
+				<div class="collapsible-header red"><i class="material-icons">whatshot</i>Third</div>
+				<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+			</li>
+		</ul>
+	</div>
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$('.collapsible').collapsible();
+		});
+	</script>
+	
+</body>
+</html>

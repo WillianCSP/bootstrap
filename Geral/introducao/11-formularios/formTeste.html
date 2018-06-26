@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+</head>
+<body>
+	<form action="">
+		<fieldset>
+			<legend>Login</legend>
+			<label for="nome">Nome:</label> <br>
+			<input type="text" id="nome" placeholder="Digite o seu usuário" required><br>
+
+			<label for="senha">Senha:</label><br>
+			<input type="password" id="senha"><br>
+
+			<input type="submit" value="Entrar">
+		</fieldset>
+
+		<fieldset>
+			<legend>Novo Cadastro</legend>
+			<label for="nome2">Nome Completo:</label> <br>
+			<input type="text" id="nome2" placeholder="Digite o seu usuário" required><br>
+
+			<label for="email">Email</label><br>
+			<input type="email"><br>
+
+			<label for="nasc">Data de Nascimento</label> <br>
+			<input type="date"><br>
+			<!-- <input type="week"><br> -->
+			<!-- <input type="month"><br> -->
+
+			<label for="estado">Estado</label><br>
+			<select name="" id="estado">
+				<option value="SP">São Paulo</option>
+				<option value="RJ">Rio de Janeiro</option>
+				<option value="ES">Espírito Santo</option>
+				<option value="BA">Bahia</option>
+				<option value="GO">Goiás</option>
+				<option value="AC">Acre</option>
+			</select> <br><br>
+			
+			<label for="sexo">Sexo:</label> <br>
+			Masc <input type="radio" name="sexo" value="Masc"> 
+			Fem <input type="radio" name="sexo" value="Fem"> <br><br>
+
+			<label for="">Como podemos entrar em contato</label> <br>
+			Email: <input type="checkbox" checked> <br>
+			Telefone: <input type="checkbox"> <br>
+			Correspondência: <input type="checkbox"> <br><br>
+			
+			<label for="mensagem">Mensagem</label> <br>
+			<textarea name="" id="" cols="70" rows="10"></textarea>
+
+		</fieldset>
+		
+		<h2>Outros campos</h2>
+		Color <input type="color"> <br>
+		Range <input type="range"> <br>
+		File <input type="file"> <br>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Materialize</title>
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container">
+		<div class="carousel carousel-slider center" data-indicators="true">
+			<div class="carousel-fixed-item center">
+				<a class="btn waves-effect white grey-text darken-text-2">button</a>
+			</div>
+			<div class="carousel-item red white-text" href="#one!">
+				<h2>Primeiro Banner</h2>
+				<p class="white-text">Lorem ipsum dolor sit amet.</p>
+			</div>
+			<div class="carousel-item amber white-text" href="#two!">
+				<h2>Segundo Banner</h2>
+				<p class="white-text">Lorem ipsum dolor sit amet.</p>
+			</div>
+			<div class="carousel-item green white-text" href="#three!">
+				<h2>Terceiro Banner</h2>
+				<p class="white-text">Lorem ipsum dolor sit amet.</p>
+			</div>
+			<div class="carousel-item blue white-text" href="#four!">
+				<h2>Quarto Banner</h2>
+				<p class="white-text">Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+
+	<script>
+		$('.carousel.carousel-slider').carousel({fullWidth: true});
+	</script>
+</body>
+</html>

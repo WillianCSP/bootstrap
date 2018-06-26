@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="estilo.css">
+	<title>Natal Turismo</title>
+</head>
+<body>
+	<header id="topo">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-8 col-md-offset-0 col-sm-offset-4 col-xs-offset-2">
+					<a href=""><img src="img/logonatal.png" class="img-responsive" alt=""></a>
+				</div>
+				<div class="col-md-3 col-sm-12 col-md-offset-6 atendimento">
+					<h3>Atendimento</h3>
+					(84) 0000-0000<br>
+					atendimento@natalturismo.com.br
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<nav class="navbar" id="menu">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Vantagens</a></li>
+					<li><a href="#">Contato</a></li>
+					<li class="dropdown" id="menuDropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Praias <span class="caret"></span></a>
+						<ul class="dropdown-menu" >
+							<li><a href="#">Praia Morro do Careca</a></li>
+							<li><a href="#">Praia Ponta Negra</a></li>
+							<li><a href="#">Praia Barra do Cunhaú</a></li>
+						</ul>
+					</li>
+				</ul>
+
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="img/banner1.jpg" alt="">
+				<div class="carousel-caption">
+					<h1>Praia Morro do Careca</h1>
+				</div>
+			</div>
+
+			<div class="item ">
+				<img src="img/banner2.jpg" alt="">
+				<div class="carousel-caption">
+					<h1>Praia Ponta Negra</h1>
+				</div>
+			</div>
+
+			<div class="item">
+				<img src="img/banner3.jpg" alt="">
+				<div class="carousel-caption">
+					<h1>Praia Barra de Cunhaú</h1>
+				</div>
+			</div>
+
+			<div class="item">
+				<img src="img/banner4.jpg" alt="">
+				<div class="carousel-caption">
+					<h1>Praia Lagonha da Coca-Cola</h1>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+	<section class="jumbotron">
+		<div class="container">
+			<h1>Praias</h1>
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<img src="img/praia1.jpg" alt="" class="img-responsive">
+					<h3>Praia Morro do Careca</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum repellat similique </p>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<img src="img/praia2.jpg" alt="" class="img-responsive">
+					<h3>Praia Ponta Negra</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maxime accusantium, numquam?</p>
+				</div>
+
+				<div class="clearfix visible-sm"></div>
+
+				<div class="col-md-3 col-sm-6">
+					<img src="img/praia3.jpg" alt="" class="img-responsive">
+					<h3>Praia Barra de Cunhaú</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis repudiandae officiis eligendi.</p>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<img src="img/praia4.jpg" alt="" class="img-responsive">
+					<h3>Praia do Forte</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, odit accusantium perspiciatis.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="vantagens">
+		<div class="container">
+			<h1>Vantagens</h1>
+			<div id="tabVantagens">
+				<div>
+
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Praias Incríveis</a></li>
+						<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Noites Badaladas</a></li>
+						<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Parque das Dunas</a></li>
+						
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active" id="home">
+							<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat sed ratione facilis deserunt voluptatem molestiae, quasi quas, id similique totam nulla accusantium sequi quia dolore eveniet in quos unde provident minus iusto dignissimos cumque distinctio! Doloremque pariatur ipsum, tenetur vero, animi recusandae culpa molestias in temporibus quos ullam placeat, ex laboriosam voluptate consequatur nobis ad assumenda accusamus laborum. Optio reiciendis explicabo facere autem consequuntur, rerum at sunt. Eos obcaecati nesciunt impedit, commodi eius, officiis aperiam nobis nihil est adipisci maiores? Aspernatur quod nam magni officia minima error. Eligendi sequi, consequatur, rem repudiandae eos alias, fuga, suscipit modi iusto hic placeat numquam dicta eveniet! Tempore repellendus esse tenetur impedit eum perspiciatis quibusdam possimus animi, dolore asperiores minus, quos laborum, laboriosam nam atque perferendis nobis natus excepturi? Odit, ut, suscipit. Blanditiis rem, culpa consequuntur. Nulla modi, neque. Sapiente cumque, ducimus ipsum praesentium ipsa laudantium adipisci libero corporis. Soluta at dolor numquam enim.</p>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="profile">
+							<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nesciunt incidunt a consequuntur quasi, porro vel perspiciatis, vero aspernatur, rerum iusto dicta voluptate maiores error! Labore quasi delectus consequuntur unde eligendi quos iusto, cum obcaecati tenetur! Libero, unde dolores vitae tenetur laboriosam pariatur inventore voluptates aliquid aperiam est expedita nobis porro incidunt ipsam, delectus ratione accusamus deserunt velit sunt optio officiis adipisci suscipit! Voluptate in adipisci, assumenda excepturi! Quod, quibusdam quasi rerum fugit. Totam, necessitatibus! Culpa voluptas necessitatibus minus velit in omnis voluptatibus, aliquid ullam esse porro impedit quaerat debitis placeat itaque maxime doloremque magnam quia animi voluptate. Asperiores, doloribus.</p>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="messages">
+							<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A vel est omnis incidunt minus. Cupiditate minima quos possimus asperiores officia quibusdam quaerat aliquid labore eos delectus, provident facere hic facilis harum nobis quasi saepe omnis. Doloremque assumenda corrupti pariatur saepe rem voluptas, suscipit hic dolores voluptatibus, sunt, modi minima incidunt exercitationem eius. Reprehenderit doloremque, totam labore voluptas reiciendis. Delectus illo laudantium necessitatibus sequi! Ad facilis, neque. Iste nisi voluptate, molestiae assumenda qui voluptatum in harum odio deserunt. Illum unde, enim iure aut, officiis, repellat praesentium nesciunt reiciendis, eaque quod dolorum. Quidem laudantium harum dolore illum numquam deserunt nulla dignissimos facere nihil distinctio corporis rerum quos iste doloribus expedita accusantium earum dicta, quas animi mollitia. Modi placeat nisi fugit quaerat laborum veritatis maxime vitae. Non, ea repellendus. Possimus ea reiciendis molestiae officia repellendus voluptates deleniti, accusantium cumque quis. Neque ab, temporibus unde, laboriosam deleniti voluptates rerum quam ipsa minima perspiciatis placeat blanditiis ad sequi sint sed modi nemo rem numquam. Nesciunt at vel dolore repudiandae ea sed, molestias autem quibusdam ad quas, architecto, accusamus animi sequi mollitia deleniti. Aperiam, nobis, neque? Cumque consectetur at vero eos, sit rerum veniam, inventore recusandae id, laudantium nesciunt repellendus tempora dolor. Porro ipsam, molestias debitis?</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="jumbotron">
+		<div class="container">
+			<h1>Cidade</h1>
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<img src="img/cidade1.jpg" alt="" class="img-responsive">
+					<h3>Restaurantes</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum repellat similique </p>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<img src="img/cidade2.jpg" alt="" class="img-responsive">
+					<h3>Baladas</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maxime accusantium, numquam?</p>
+				</div>
+
+				<div class="clearfix visible-sm"></div>
+
+				<div class="col-md-3 col-sm-6">
+					<img src="img/cidade3.jpg" alt="" class="img-responsive">
+					<h3>Shoppings</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis repudiandae officiis eligendi.</p>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<img src="img/cidade4.jpg" alt="" class="img-responsive">
+					<h3>Maior Cajueiro do Mundo</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, odit accusantium perspiciatis.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="video">
+		<div class="container">
+			<div class="page-header">
+				<h1>Conheça Natal-RN</h1>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/elftPA9gjEo" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ex dicta corporis! Dolores recusandae rem a eveniet, rerum, at, impedit incidunt excepturi maxime voluptates ullam, reprehenderit corporis ducimus perferendis sequi!</p>
+
+					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ex dicta corporis! Dolores recusandae rem a eveniet, rerum, at, impedit incidunt excepturi maxime voluptates ullam, reprehenderit corporis ducimus perferendis sequi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, dolorem! Amet velit ad sapiente minima neque delectus ratione deserunt perferendis laudantium expedita, magnam rem, asperiores fuga iste, totam molestias. Aliquid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore veniam, a quisquam, laudantium est nobis accusantium qui suscipit accusamus sit, voluptatum ratione impedit itaque harum asperiores delectus quos temporibus perspiciatis.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="rodape">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<h4>Natal Turismo</h4>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Vantagens</a></li>
+						<li><a href="#">Contato</a></li>
+						<li><a href="#">Praias</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<h4>Links Importantes</h4>
+					<ul>
+						<li><a href="#">Hoteis</a></li>
+						<li><a href="#">Dicas de Viagem</a></li>
+						<li><a href="#">Passeios</a></li>
+						<li><a href="#">Informações</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<h4>Redes Sociais</h4>
+					<p class="text-center" id="rodapeSocial">
+						<a href=""><img src="img/facebook.png" alt=""></a>
+						<a href=""><img src="img/instagram.png" alt=""></a>
+						<a href=""><img src="img/linkedin.png" alt=""></a>
+						<a href=""><img src="img/plus.png" alt=""></a>
+						<a href=""><img src="img/twitter.png" alt=""></a>
+						<a href=""><img src="img/youtube.png" alt=""></a>
+					</p>
+					<div class="row">
+						<h3>Assine Nossa Newsletter!</h3>
+						<form action="">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="nome">Nome</label>
+									<input type="text" class="form-control" id="nome">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="email">Email</label>
+									<input type="email" class="form-control" id="email">
+								</div>
+							</div>
+							<div class="col-md-12 text-right">
+								<input type="submit" class="btn btn-primary" value="Cadastrar">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

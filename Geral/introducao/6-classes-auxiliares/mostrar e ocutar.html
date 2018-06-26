@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap</title>
+
+	<!-- meta site responsivos-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<header class="page-header">
+			<h1>Mostrar e Ocultar</h1>
+		</header>
+
+		<h2 class="bg-success">Hidden/Esconder</h2>
+
+		<div class="hidden">Esconde o elemento em todas as resoluções</div>
+		<div class="hidden-xs"> xs - Esconde o elemento até 768px</div>
+		<div class="hidden-sm"> sm - Esconde o elemento de 768px a 992px</div>
+		<div class="hidden-md"> md - Esconde o elemento de 992px a 1200px </div>
+		<div class="hidden-lg"> lg - Esconde o elemento a partir de 1200px</div>
+
+		<div class="row">
+			<div class="col-md-6 col-sm-12 ">
+				<h3>Coluna 1</h3>
+				<img src="http://lorempixel.com/400/400/sports/1" class="img-responsive center-block">
+			</div>
+
+			<!-- esconder para SM -->
+			<div class="col-md-6 hidden-sm ">
+				<h3>Coluna 2</h3>
+				<img src="http://lorempixel.com/400/400/sports/2" class="img-responsive center-block">
+			</div>
+		</div>
+		<hr>
+		
+
+		<h2 class="bg-success">Visible</h2>
+
+		<!-- 
+			visible-resolucao-display
+
+			displays aceitos:
+			block
+			inline
+			inline-block
+		 -->
+		
+		<div class="visible-xs-block">
+			<h3>VISIVEL XS</h3>
+			<img src="http://lorempixel.com/400/400/sports/1" class="img-responsive center-block">
+		</div>
+		<div class="visible-sm-block">
+			<h3>VISIVEL SM</h3>
+			<img src="http://lorempixel.com/400/400/sports/2" class="img-responsive center-block">
+		</div>
+		<div class="visible-md-block">
+			<h3>VISIVEL MD</h3>
+			<img src="http://lorempixel.com/400/400/sports/3" class="img-responsive center-block">
+		</div>
+		<div class="visible-lg-block">
+			<h3>VISIVEL LG</h3>
+			<img src="http://lorempixel.com/700/400/" class="img-responsive center-block">
+		</div>
+
+
+
+	<!-- scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+</body>
+</html>

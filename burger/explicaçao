@@ -1,0 +1,54 @@
+Less
+1 - baixar e instalar o notejs
+2 - abrir o terminal ou o prompt e verificar a versão/instalacao
+	- no terminal digitar "node -v"
+3 - instalar o less
+	- no terminal digiar "npm install -g less"
+4 - verificar versao
+	- no terminal lessc -v
+5 - abrir o diretorio no terminal
+	ls = listar arquivos
+	cd = abrir pasta - ex: cd desktop
+	clear = limpar tela
+6 - pre-processar less para css
+	ex: lessc estilo.less estilo.css
+
+comando less
+@ =  variavel
+ex: @corPadrao: #999999;
+
+aplicada - .titulo{
+				color:@corPadrao;
+			}
+
+mixins = diversas formataçoes
+
+ex: .bordas{
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-o-border-radius: 10px;
+	}
+aplicada - .botao{
+				.bordas;
+				background: #ff0000;
+			}
+comentario
+funciona tanto no less quando no css = /* */
+funciona apenas no less = //
+
+expand
+exemplo: 
+	#menu{
+		background: red;
+		a{
+			color: yellow;
+		}& hover{
+			color:orange;
+		}
+aplicado
+	#menu{background: red;}
+	#menu a{color: yellow;}
+	#menu a:hover{color: orange;}
+
+
+

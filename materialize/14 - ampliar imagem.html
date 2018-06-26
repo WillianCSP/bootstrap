@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Materialize</title>
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container">
+		<h1>Zoom Foto</h1>
+		<img class="materialboxed" src="http://lorempixel.com/600/500/" width="300">
+	</div>
+
+	<div class="container">
+		<h1>Zoom Foto com legenda</h1>
+		<img class="materialboxed" data-caption="Imagem com legenda"  src="https://lorempixel.com/400/400/nature/4">
+	</div>
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		    $('.materialboxed').materialbox();
+		  });
+	</script>
+</body>
+</html>

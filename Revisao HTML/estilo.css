@@ -1,0 +1,244 @@
+*{
+	margin: 0; padding: 0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+#redeSocial{
+	background: #333; /* cor de fundo */
+	border-top: 10px solid orange; /* borda */
+}
+	#redeSocial ul{
+		text-align: right;
+		padding: 7px;
+	}
+	#redeSocial ul li{
+		list-style: none;
+		display: inline;
+	}
+	#redeSocial ul li a{
+		color: #ddd;
+		font-size: 20px;
+	}
+	#redeSocial ul li a:hover{
+		color: #fff;
+	}
+.container{
+	width: 72%; /*tamanho*/
+	margin: auto; /*centralizar container*/
+}
+img{
+	width: 100%;
+}
+#logo{
+	width: 25%;
+	float: left;
+}
+#botaoMenu{
+	display: none;
+}
+#nav{
+	width: 70%;
+	float: right;
+	margin-top: 50px;
+}	
+	#nav ul{
+		text-align: right;
+	}
+	#nav ul li{
+		list-style: none;
+		display: inline;
+	}
+		#nav ul li a{
+			text-decoration: none;
+			background: #000;
+			color: #fff;
+			padding: 10px;
+			transition: all 1s ease;
+		}
+		#nav ul li a:hover{
+			background: red;
+			padding-bottom: 20px;
+			transition: all 1s ease;
+		}
+#banner{
+	margin-top: 10px;
+}
+.clear{
+	clear: both;
+}
+.titulos{
+	font-family: 'Lobster', cursive;
+}
+#boasVindas{
+	width: 50%;
+	margin: 1em auto;
+	text-align: center;
+}
+	#boasVindas h1{
+		color: red;
+		border-bottom: 1px solid red;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		font-size: 2em;
+		text-shadow: 1px 1px 5px #000;
+	}
+.servicos{
+	width: 30%; float: left;
+	margin: 10px 1.6666666%;
+}
+
+#parallax{
+	background: #910a7a url("img/bg-parallax.png") fixed;
+	background-size: cover;
+	color: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+	#parallax h1{
+		margin-bottom: 20px;
+	}
+	#parallax p{
+		text-align: justify;
+		margin-bottom: 10px;
+	}
+#espacoTexto{
+	width: 65%;
+	float: left;
+}
+	#espacoTexto h1{
+		margin-bottom: 20px;
+	}
+	#espacoTexto p{
+		margin-bottom: 15px;
+		text-align: justify;
+	}
+#espacoFoto{
+	width: 25%;
+	float: right;
+}
+	#espacoFoto img{
+		border: 5px solid orange;
+		padding:3px;
+	}
+	#espacoFoto img:hover{
+		filter: sepia(100%);
+		transition: all 1s ease;
+	}
+#rodape{
+	background: #333;
+	padding: 20px 0;
+	color: #ddd;
+}
+.footerCaixa{
+	width: 23%;
+	float: left;
+}
+	.footerCaixa ul li{
+		list-style: square inside;
+	}
+	.footerCaixa ul li a{
+		color: #ddd;
+		text-decoration: none;
+		font-size: 13px;
+	}
+#footerEndereco{
+	width: 23%;
+	float: right;
+	text-align: right;
+	font-size: 13px;
+	font-style: normal;
+}
+
+/************* Breakpont **********/
+@media (max-width: 1024px ){
+	.container{
+		width: 90%;
+	}
+	#logo{
+		width: 40%;
+		float: none;
+		margin:auto;
+	}
+	#nav{
+		width: 100%;
+		float: none;
+		margin: 10px auto;
+	}
+		#nav ul{
+			text-align: center;	
+		}
+}
+/************* Breakpont **********/
+@media (max-width: 500px){
+	#logo{
+		width: 80%;
+	}
+
+	#banner{
+		display: none;
+	}
+	#boasVindas{
+		width: 100%;
+	}
+	.servicos{
+		width: 80%;
+		float: none;
+		margin: auto;
+	}
+	#espacoTexto{
+		width: 100%;
+		float: none;
+	}
+	#espacoFoto{
+		width: 80%;
+		float: none;
+		margin: auto;
+	}
+	.footerCaixa, #footerEndereco{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.footerCaixa ul li{
+		list-style: none;
+	}
+	#nav{
+		margin-top: 1px;
+		display: none;
+	}
+	#nav ul li {
+		display: block;
+	}
+	#nav ul li a{
+		display: block;
+		border-bottom: 1px solid #666;
+	}
+	#nav ul li a:hover{
+		padding-bottom: 10px;
+	}
+	#botaoMenu{
+		display: block;
+		background: #000;
+		color: #fff;
+		text-align: center;
+		padding: 10px;
+		cursor: pointer;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
